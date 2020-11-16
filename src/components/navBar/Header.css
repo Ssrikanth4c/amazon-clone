@@ -38,8 +38,8 @@
     justify-content: space-evenly;
 }
 .header__link{
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
 }
 .header__option{
     display:flex;

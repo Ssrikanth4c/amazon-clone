@@ -16,6 +16,15 @@
     top:-200px;
 }
 
+.home__product{
+    height: 420px;
+    width: 100%;
+    /* border:1px solid; */
+}
+.home__product a{
+    text-decoration: none !important;
+    color: black !important;
+}
 @media(min-width:1200px){
     .home__products{
         top:-300px;
