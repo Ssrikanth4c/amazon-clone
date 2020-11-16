@@ -1,0 +1,23 @@
+.home{
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(221, 220, 215);
+    min-height: 100vh;
+}
+.home__image{
+    mask-image: linear-gradient(to bottom, rgb(75, 72, 72), rgba(0,0,0,0));
+    width: 100%;
+
+}
+.home__products{
+    position: relative;
+    top:-200px;
+}
+
+@media(min-width:1200px){
+    .home__products{
+        top:-300px;
+    }
+}

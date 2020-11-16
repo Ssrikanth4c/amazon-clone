@@ -1,0 +1,13 @@
+.singleProduct img{
+    height: 250px !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+@media(min-width:992px){ 
+    .singleProduct img{
+        height: 285px !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
+}

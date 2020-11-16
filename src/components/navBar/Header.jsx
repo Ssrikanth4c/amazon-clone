@@ -28,6 +28,10 @@ function Header() {
             {/* End of SearchBar */}
             {/* 3 links --- navlinks */}
             <div className="header__navBar">
+                {/* india flag */}
+                <div className="header__optionFlag">
+                    <img height={20} src="https://cdn.webshopapp.com/shops/94414/files/54025310/india-flag-icon-free-download.jpg" alt="india"/>
+                </div>
                 {/* account link */}
                 <Link to='/account' className='header__link'>
                     <div className="header__option">
