@@ -1,0 +1,9 @@
+.shoppingCard__small{
+    font-size: 10px;
+    font-weight: 900;
+    margin-top: -9px;
+}
+.shoppingCard__small + p{
+    font-weight: normal;
+    font-size: 12px;
+}

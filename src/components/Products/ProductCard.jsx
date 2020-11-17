@@ -1,6 +1,22 @@
 import React from 'react'
 import StarIcon from '@material-ui/icons/Star';
+import {useStateValue} from '../../Context/StateProvider';
 function ProductCard({card_data}) {
+    const [{cart}, dispatch] = useStateValue();
+    const addToCart=()=>{
+        dispatch({
+            type:'ADD_TO_CART',
+            item:{
+                img_url:card_data.img_url,
+                product_title:card_data.product_title,
+                product_by:card_data.product_by,
+                actual_price:card_data.actual_price,
+                discount_price:card_data.discount_price,
+                isPrime:card_data.isPrime,
+                ratings:card_data.ratings,
+            },
+        });
+    };
     return (
         <div className='mb-3 border'>
             {/*     img_url:
@@ -36,7 +52,7 @@ function ProductCard({card_data}) {
                     }
                 </div>
                 <div className='text-center'>
-                    <button class=' mt-2 btn btn-warning font-weight-bold'>Add to Cart</button>
+                    <button onClick={addToCart} class=' mt-2 btn btn-warning font-weight-bold'>Add to Cart</button>
                 </div>
             </div>
         </div>

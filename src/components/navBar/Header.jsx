@@ -1,11 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-import './Header.css'
+import './Header.css';
+import {useStateValue} from '../../Context/StateProvider';
 function Header() {
+    const [{cart}]=useStateValue();
     return (
-        <nav className='header'>
+       <nav className='header'>
             {/*
              side nav-bar
              logo
@@ -57,7 +60,7 @@ function Header() {
                 <Link to='/cart' className='header__link'>
                     <div className="header__optionCart">
                         <ShoppingCartOutlinedIcon  fontSize='large'/>
-                        <span>10</span>
+                        <span>{cart?.length}</span>
                     </div>
                 </Link>
             </div>
